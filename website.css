@@ -1,16 +1,26 @@
+@font-face {
+	font-family: junction;
+	src: url(junction-regular.woff)
+}
+
 * {
 	margin: 0;
+	font-family: junction;
 }
 
 .header {
+	background-image: url("background.gif");
 	background-color: black;
+	background-repeat: no-repeat;
+	background-size: 60% 100%;
 	width: 100%;
 	text-align: center;
 }
 
 .header h1 {
-	color: white;
-	padding: 360px 0px 350px 0px;
+	color: orange;
+	padding: 298px 0px 280px 0px;
+	font-size: 50px;
 }
 
 .stickyNav {
@@ -19,7 +29,7 @@
 	width: 100%;
 	justify-content: center;
 	background-color: black;
-	border-bottom: 5px solid #FFD700;
+	border-bottom: 5px solid #FFD700; /*Gold*/
 	position: sticky;
 	top: 0;
 }
@@ -28,6 +38,9 @@
 	.stickyNav {
 		flex-direction: column;
 		align-content: center;
+	}
+	.stickyNav a {
+		padding: 0;
 	}
 }
 
@@ -40,27 +53,28 @@
 }
 
 .stickyNav a:hover{ 
-	color: #FFD700;
+	color: orange;
+	text-decoration: underline; 
 }
 
 .about {
-	border-bottom: 5px solid #FFD700;
+	border-bottom: 5px solid #FFD700; /*Gold*/
 	background-color: #e8e8e8;
 }
 
 .portfolio {
-	border-bottom: 5px solid #FFD700;
+	border-bottom: 5px solid #FFD700; /*Gold*/
 	background-color: #7b7c7c;
 	color: #FFD700;
 }
 
 .blog {
-	border-bottom: 5px solid #FFD700;
+	border-bottom: 5px solid #FFD700; /*Gold*/
 	background-color: #e8e8e8;
 }
 
 .contact {
-	border-bottom: 5px solid #FFD700;
+	border-bottom: 5px solid #FFD700; /*Gold*/
 	background-color: #7b7c7c;
 	color: #FFD700;
 }
