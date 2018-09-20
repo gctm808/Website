@@ -19,8 +19,20 @@
 
 .header h1 {
 	color: orange;
-	padding: 298px 0px 280px 0px;
+	padding: 298px 0px 50px 0px;
 	font-size: 50px;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.social a {
+    padding: 10px 50px 160px;
+    text-align: center;
 }
 
 .stickyNav {
