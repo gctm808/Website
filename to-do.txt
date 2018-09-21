@@ -1,0 +1,23 @@
+to do
+-Header alignment
+-Social bar hover color change
+-add badges to about me/qualities
+-portfolio section
+	-hoverable images?
+-blog
+	-write up first blog
+	-upload 1st/2nd posts (note 2nd as still in dev)
+-inquiries
+	-fix message text align/textwrap
+	-make all fields required
+-responsive testing
+-bookmark scroll
+
+
+backburner
+-Colored scroll bar
+-redesigned header font
+-add functionality to about me  badges on hover
+	-responsiveness shrinking
+	-Speed flipping badge
+	-Functionality/Pop Color revolving

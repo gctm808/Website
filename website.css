@@ -8,34 +8,6 @@
 	font-family: junction;
 }
 
-.header {
-	background-image: url("background.gif");
-	background-color: black;
-	background-repeat: no-repeat;
-	background-size: 60% 100%;
-	width: 100%;
-	text-align: left;
-    border-bottom: 5px solid #FFD700; /*Gold*/
-}
-
-.header h1 {
-	color: #FFD700; /*Gold*/
-	padding: 250px 0px 50px 420px;
-	font-size: 50px;
-}
-
-.social {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-}
-
-.social a {
-    text-align: center;
-	margin: 10px 50px 222px;
-}
-
 .stickyNav {
 	display: flex;
 	flex-wrap: wrap;
@@ -60,6 +32,35 @@
 	text-decoration: underline; 
 }
 
+.header {
+	background-image: url("background.gif");
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: 60% 100%;
+	width: 100%;
+	text-align: center;
+    border-bottom: 5px solid #FFD700; /*Gold*/
+}
+
+.header h1 {
+	color: #FFD700; /*Gold*/
+	padding: 250px 0px 50px 0px;
+	font-size: 50px;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	width: 100%;
+}
+
+.social a {
+    text-align: center;
+	margin: 10px 25px 222px;
+}
+
+
 @media screen and (max-width: 600px){
 	.stickyNav {
 		flex-direction: column;
@@ -78,10 +79,25 @@
 .aboutHeader {
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding: 50px 0px 20px;
     text-decoration: underline;
     text-decoration-color: #FFD700;
     font-size: 30px;
+}
+
+.aboutContainer {
+	display: flex;
+}
+
+.tools {
+	flex: 25%;
+	border-right: 3px solid #FFD700;
+	padding: 0px 20px 20px 20px; 
+}
+
+.qualities {
+	flex: 75%;
+	padding-left: 230px;
 }
 
 .portfolio {
@@ -124,4 +140,24 @@
     text-decoration: underline;
     text-decoration-color: #FFD700;
     font-size: 30px;
+}
+
+.contactText {
+	display: flex;
+	font-size: 25px;
+	justify-content: center;
+	text-align: center;
+}
+
+.contactForms {
+	display: flex;
+	font-size: 20px;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#message {
+	line-height: 70px;
+	align-items: flex-start;
 }
