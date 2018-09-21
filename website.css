@@ -14,12 +14,13 @@
 	background-repeat: no-repeat;
 	background-size: 60% 100%;
 	width: 100%;
-	text-align: center;
+	text-align: left;
+    border-bottom: 5px solid #FFD700; /*Gold*/
 }
 
 .header h1 {
 	color: #FFD700; /*Gold*/
-	padding: 298px 0px 50px 0px;
+	padding: 250px 0px 50px 420px;
 	font-size: 50px;
 }
 
@@ -32,7 +33,7 @@
 
 .social a {
     text-align: center;
-	margin: 10px 50px 165px;
+	margin: 10px 50px 222px;
 }
 
 .stickyNav {
@@ -74,18 +75,53 @@
 	background-color: #7b7c7c; /*Dark Gray*/
 }
 
+.aboutHeader {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    text-decoration: underline;
+    text-decoration-color: #FFD700;
+    font-size: 30px;
+}
+
 .portfolio {
 	border-bottom: 5px solid #FFD700; /*Gold*/
 	background-color: #e8e8e8; /*Light Gray*/
+}
+
+.portfolioHeader {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    text-decoration: underline;
+    text-decoration-color: #FFD700;
+    font-size: 30px;
 }
 
 .blog {
 	border-bottom: 5px solid #FFD700; /*Gold*/
 	background-color: #7b7c7c; /*Dark Gray*/
 }
-
+    
+.blogHeader {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    text-decoration: underline;
+    text-decoration-color: #FFD700;
+    font-size: 30px;
+}
+    
 .contact {
 	border-bottom: 5px solid #FFD700; /*Gold*/
 	background-color: #e8e8e8; /*Light Gray*/
 }
 
+.contactHeader {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    text-decoration: underline;
+    text-decoration-color: #FFD700;
+    font-size: 30px;
+}
