@@ -1,11 +1,8 @@
-@font-face {
-	font-family: junction;
-	src: url(junction-regular.woff)
-}
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 * {
 	margin: 0;
-	font-family: junction;
+	font-family: Oswald, sans-serif;
 }
 
 .stickyNav {
@@ -33,33 +30,32 @@
 }
 
 .header {
-	background-image: url("background.gif");
-	background-color: black;
-	background-repeat: no-repeat;
-	background-size: 60% 100%;
-	width: 100%;
-	text-align: center;
-    border-bottom: 5px solid #FFD700; /*Gold*/
+	background-color: #e8e8e8;
+	border-bottom: 5px solid #FFD700;
 }
 
-.header h1 {
-	color: #FFD700; /*Gold*/
-	padding: 250px 0px 50px 0px;
-	font-size: 50px;
+.title {
+	width: 500px;
+	margin: auto;
+	padding-top: 200px;
+	font-size: 25px;
+}
+
+#titleUnderline {
+	border-bottom: 4px solid #FFD700;
 }
 
 .social {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-	width: 100%;
+	width: 350px;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 162px;
+	text-align: center;
 }
 
-.social a {
-    text-align: center;
-	margin: 10px 25px 222px;
+.social img {
+	padding: 0px 25px;
 }
-
 
 @media screen and (max-width: 600px){
 	.stickyNav {
@@ -112,6 +108,15 @@
     text-decoration: underline;
     text-decoration-color: #FFD700;
     font-size: 30px;
+}
+
+.projects {
+	width: 350px;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 162px;
+	text-align: center;
+	/*make each section their own div*/
 }
 
 .blog {
