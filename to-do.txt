@@ -1,9 +1,9 @@
 to do
--Header alignment
+-Image above header
 -Social bar hover color change
 -add badges to about me/qualities
 -portfolio section
-	-hoverable images?
+	-Image size increase on hover
 -blog
 	-write up first blog
 	-upload 1st/2nd posts (note 2nd as still in dev)
@@ -12,6 +12,7 @@ to do
 	-make all fields required
 -responsive testing
 -bookmark scroll
+
 
 
 backburner
