@@ -1,14 +1,15 @@
 to do
 -Image above header
 -Social bar hover color change
--add badges to about me/qualities
 -portfolio section
 	-Image size increase on hover
+	-add image overlay
 -blog
 	-write up first blog
 	-upload 1st/2nd posts (note 2nd as still in dev)
+	-Add images/transitions
 -inquiries
-	-fix message text align/textwrap
+	-add functionality
 	-make all fields required
 -responsive testing
 -bookmark scroll
@@ -17,7 +18,6 @@ to do
 
 backburner
 -Colored scroll bar
--redesigned header font
 -add functionality to about me  badges on hover
 	-responsiveness shrinking
 	-Speed flipping badge
