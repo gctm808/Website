@@ -1,9 +1,7 @@
 to do
+-add icon images
 -Image above header
 -Social bar hover color change
--portfolio section
-	-Image size increase on hover
-	-add image overlay
 -blog
 	-write up first blog
 	-upload 1st/2nd posts (note 2nd as still in dev)
