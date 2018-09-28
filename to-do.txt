@@ -1,7 +1,6 @@
 to do
--add icon images
+-section resizing for scroll
 -Image above header
--Social bar hover color change
 -blog
 	-write up first blog
 	-upload 1st/2nd posts (note 2nd as still in dev)
@@ -16,7 +15,3 @@ to do
 
 backburner
 -Colored scroll bar
--add functionality to about me  badges on hover
-	-responsiveness shrinking
-	-Speed flipping badge
-	-Functionality/Pop Color revolving

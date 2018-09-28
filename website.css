@@ -59,6 +59,12 @@
 	border-radius: 50%;
 }
 
+.social img:hover {
+	transform: scale(1.1, 1.1);
+	border: 5px solid #ffcda0;
+	transition: all .25s ease-in-out;
+}
+
 @media screen and (max-width: 600px){
 	.stickyNav {
 		flex-direction: column;
@@ -105,6 +111,7 @@
 
 .tools ul{
 	padding-top: 30px;
+	font-size: 20px;
 	list-style-type: none;
 }
 
@@ -135,12 +142,6 @@
 	border-radius: 50%;
 }
 
-.icons img:hover {
-	transform: scale(1.1, 1.1);
-	border: 5px solid #ffcda0;
-	transition: all .4s ease-in-out;
-}
-
 .portfolio {
 	border-bottom: 5px solid #ffcda0; /*Gold*/
 }
@@ -156,10 +157,9 @@
 }
 
 .projects {
-	width: 1400px;
+	width: 100%;
 	text-align: center;
 	margin: auto;
-	padding: 20px;
 }
 
 .projects img {
@@ -211,6 +211,7 @@
 .blogRow img {
 	border: 2px solid #ffcda0;
 	border-radius: 8px;
+	background-color: white;
 }
 
     
