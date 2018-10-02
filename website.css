@@ -5,6 +5,10 @@
 	font-family: Oswald, sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .stickyNav {
 	display: flex;
 	flex-wrap: wrap;
