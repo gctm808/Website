@@ -205,17 +205,34 @@ html {
     font-size: 45px;
 }
 
+.blogIntro{
+	display: flex;
+	font-size: 25px;
+	justify-content: center;
+	text-align: center;
+}
+
 .blogs {
 	width: 700px;
 	margin: auto;
 	text-align: center;
-	padding-bottom: 200px;
+	padding: 30px;
 }
 
 .blogRow img {
 	border: 2px solid #ffcda0;
 	border-radius: 8px;
 	background-color: white;
+}
+
+.blog button {
+	margin: 100px 0px;
+	background-color: #ffcda0;
+	font-size: 20px;
+	border-radius: 4px;
+	color: black;
+	border: 2px solid black;
+	border-radius: 4px;
 }
 
     
@@ -254,7 +271,7 @@ html {
 	border: 2px solid black;
 	margin-top: 10px;
 	border-radius: 4px;
-	font-size: 15px;
+	font-size: 20px;
 }
 
 .submitButton:hover {
