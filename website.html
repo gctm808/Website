@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="website.css">
 </head>
 <body>
+	<script>document.body.className += ' fade-out';</script>
 	<div class="stickyNav">
 		<a href="#homeBookmark" id="homeLink">Home<a>
 		<a href="#aboutBookmark" id="aboutLink">About Me<a>
@@ -15,9 +16,8 @@
 	</div>
 	<div class="header" id="homeBookmark">
 		<div class="title">
-			<h1>Garrett Moore.<br>Creating website
-			experiences to light<br><span id="titleUnderline">a fire under your business.</h1>
-			</span></div>
+			<h1><span id="line1" class="showLine1 titleFade">Garrett Moore.</span><br><span id="line2" class="showLine2 titleFade">Creating website</span><br><span id="line3" class="showLine3 titleFade">experiences to light</span><br><span id="titleUnderline" class="showLine4 titleFade">a fire under your business.</span></h1>
+		</div>
 		<div class="social"> 
 			<a href="mailto:gctm808@gmail.com?Subject=WebDev%20Inquiry" target="_top" id="mail">
 				<img src="mail.png" alt="mail" style="height:75px">
@@ -98,7 +98,7 @@
 				<img src="blog2.png" alt="" height="180px" width="200px">
 				<img src="blog2.png" alt="" height="180px" width="200px">
 			</div>
-			<button>See All Blog Posts</button>
+			<button class="blogButton">See All Blog Posts</button>
 		</div>
 	</div>
 	<div class="contact" id="contactBookmark">

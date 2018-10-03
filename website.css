@@ -9,6 +9,16 @@ html {
 	scroll-behavior: smooth;
 }
 
+body {
+    opacity: 1;
+    transition: 2s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
 .stickyNav {
 	display: flex;
 	flex-wrap: wrap;
@@ -41,8 +51,33 @@ html {
 .title {
 	width: 500px;
 	margin: auto;
-	padding-top: 150px;
+	padding-top: 160px;
 	font-size: 25px;
+}
+
+.showLine1 {
+	opacity: 1;
+	transition: 2s opacity;
+}
+
+.showLine2 {
+	opacity: 1;
+	transition: 4s opacity;
+}
+
+.showLine3 {
+	opacity: 1;
+	transition: 6s opacity;
+}
+
+.showLine4 {
+	opacity: 1;
+	transition: 8s opacity;
+}
+
+.titleFade {
+    opacity: 0;
+    transition: none;
 }
 
 #titleUnderline {
@@ -53,7 +88,7 @@ html {
 	width: 450px;
 	margin: auto;
 	padding-top: 20px;
-	padding-bottom: 162px;
+	padding-bottom: 168px;
 	text-align: center;
 }
 
@@ -69,15 +104,6 @@ html {
 	transition: all .25s ease-in-out;
 }
 
-@media screen and (max-width: 600px){
-	.stickyNav {
-		flex-direction: column;
-		align-content: center;
-	}
-	.stickyNav a {
-		padding: 0;
-	}
-}
 
 .about {
 	border-bottom: 5px solid #ffcda0; /*Gold*/
@@ -89,7 +115,7 @@ html {
 	font-size: 45px;
     text-decoration: underline;
     text-decoration-color: #ffcda0;
-	padding: 50px;
+	padding: 69px;
 	width: 200px;
 	text-align: center;
 	margin: auto;
@@ -152,7 +178,7 @@ html {
 
 .portfolio h2 {
 	font-size: 45px;
-	padding: 50px;
+	padding: 100px;
 	width: 200px;
 	text-align: center;
 	margin: auto;
@@ -168,7 +194,7 @@ html {
 
 .projects img {
 	border: 2px solid #ffcda0;
-	border-radius: 12px;
+	border-radius: 50%;
 	margin: 20px 160px;
 }
 
@@ -181,13 +207,13 @@ html {
 .projectDescriptions {
 	font-size: 25px;
 	text-align: center;
-	padding-bottom: 185px;
+	padding-bottom: 130px;
 	text-decoration: underline;
     text-decoration-color: #ffcda0;
 }
 
 .projectDescriptions span {
-	padding: 0px 250px;
+	padding: 0px 260px;
 }
 
 .blog {
@@ -199,7 +225,7 @@ html {
 .blog h2 {
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding: 70px;
     text-decoration: underline;
     text-decoration-color: #ffcda0;
     font-size: 45px;
@@ -213,7 +239,7 @@ html {
 }
 
 .blogs {
-	width: 700px;
+	width: 1000px;
 	margin: auto;
 	text-align: center;
 	padding: 30px;
@@ -221,12 +247,19 @@ html {
 
 .blogRow img {
 	border: 2px solid #ffcda0;
-	border-radius: 8px;
+	border-radius: 50%;
 	background-color: white;
+	margin: 22px 50px;
 }
 
-.blog button {
-	margin: 100px 0px;
+.blogRow img:hover {
+	transform: scale(1.1, 1.1);
+	border: 5px solid #ffcda0;
+	transition: all .4s ease-in-out;
+}
+
+.blogButton {
+	margin: 50px 0px;
 	background-color: #ffcda0;
 	font-size: 20px;
 	border-radius: 4px;
@@ -234,6 +267,7 @@ html {
 	border: 2px solid black;
 	border-radius: 4px;
 }
+
 
     
 .contact {
@@ -262,7 +296,7 @@ html {
 	font-size: 20px;
 	justify-content: center;
 	text-align: center;
-	margin-bottom: 150px;
+	margin-bottom: 120px;
 }
 
 .submitButton {
@@ -281,4 +315,15 @@ html {
 #message {
 	line-height: 70px;
 	align-items: flex-start;
+}
+
+
+@media screen and (max-width: 600px){
+	.stickyNav {
+		flex-direction: column;
+		align-content: center;
+	}
+	.stickyNav a {
+		padding: 0;
+	}
 }
