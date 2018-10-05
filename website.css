@@ -49,8 +49,8 @@ body.fade-out {
 }
 
 .title {
-	width: 500px;
-	margin: auto;
+	display: flex;
+	justify-content: center;
 	padding-top: 160px;
 	font-size: 25px;
 }
@@ -85,11 +85,10 @@ body.fade-out {
 }
 
 .social {
-	width: 450px;
-	margin: auto;
+	display: flex;
 	padding-top: 20px;
 	padding-bottom: 168px;
-	text-align: center;
+	justify-content: center;
 }
 
 .social img {
@@ -122,20 +121,21 @@ body.fade-out {
 }
 
 .about h3 {
+	text-align: center;
 	padding-bottom: 20px;
 }
 
-.con {
+.aboutContainer {
 	display: flex;
 }
 
 .tools {
 	flex: 25%;
-	text-align: center;
 }
 
 .tools h3 {
 	font-size: 30px;
+	text-align: center;
 	padding-left: 40px;
 }
 
@@ -143,28 +143,44 @@ body.fade-out {
 	padding-top: 30px;
 	font-size: 20px;
 	list-style-type: none;
+	text-align: center;
 }
 
 .qualities {
 	flex: 75%;
-	text-align: center;
-	padding-bottom: 152px;
 }
 
 .qualities h3 {
 	font-size: 30px;
+	text-align: center;
 }
 
-.qualitiesImg img {
-	margin: 0px 210px auto;
-}
-
-.qualitiesContainer {
+.qualRow1 {
 	display: flex;
+	justify-content: center;
 }
 
-.qualitiesContainer > div {
+.responsiveness {
+	text-align: center;
 	flex: 50%;
+	font-size: 20px;
+}
+
+.extensibility {
+	text-align: center;
+	flex: 50%;
+	font-size: 20px;
+}
+
+.qualRow2 {
+	display: flex;
+	justify-content: center;
+}
+
+.functionality {
+	text-align: center;
+	padding-bottom: 100px;
+	font-size: 20px;
 }
 
 .icons img {
@@ -176,26 +192,23 @@ body.fade-out {
 	border-bottom: 5px solid #ffcda0; /*Gold*/
 }
 
+
 .portfolio h2 {
 	font-size: 45px;
-	padding: 100px;
-	width: 200px;
-	text-align: center;
-	margin: auto;
+	padding: 100px 0px;
 	text-decoration: underline;
-    text-decoration-color: #ffcda0;
+	text-decoration-color: #ffcda0;
+	text-align: center;
 }
 
 .projects {
-	width: 100%;
+	display: flex;
 	text-align: center;
-	margin: auto;
 }
 
 .projects img {
 	border: 2px solid #ffcda0;
 	border-radius: 50%;
-	margin: 20px 160px;
 }
 
 .projects img:hover {
@@ -204,16 +217,15 @@ body.fade-out {
 	transition: all .4s ease-in-out;
 }
 
-.projectDescriptions {
+.clientProjects {
+	flex: 50%;
 	font-size: 25px;
-	text-align: center;
-	padding-bottom: 130px;
-	text-decoration: underline;
-    text-decoration-color: #ffcda0;
 }
 
-.projectDescriptions span {
-	padding: 0px 260px;
+.mockProjects {
+	flex: 50%;
+	margin-bottom: 200px;
+	font-size: 25px;
 }
 
 .blog {
@@ -221,7 +233,7 @@ body.fade-out {
 	background-color: #7b7c7c; /*Dark Gray*/
 	color: white;
 }
-    
+
 .blog h2 {
     display: flex;
     justify-content: center;
@@ -239,23 +251,33 @@ body.fade-out {
 }
 
 .blogs {
-	width: 1000px;
-	margin: auto;
 	text-align: center;
 	padding: 30px;
+	display: flex;
+	font-size: 25px;
 }
 
-.blogRow img {
+.blogFlexBox {
+	flex: 33.33%;
+}
+
+.blogFlexBox img {
 	border: 2px solid #ffcda0;
 	border-radius: 50%;
 	background-color: white;
 	margin: 22px 50px;
 }
 
-.blogRow img:hover {
+.blogFlexBox img:hover {
 	transform: scale(1.1, 1.1);
 	border: 5px solid #ffcda0;
 	transition: all .4s ease-in-out;
+}
+
+.buttonContainer {
+	display: flex;
+	width: 100%;
+	justify-content: center;
 }
 
 .blogButton {
@@ -267,8 +289,6 @@ body.fade-out {
 	border: 2px solid black;
 	border-radius: 4px;
 }
-
-
     
 .contact {
 	border-bottom: 5px solid #ffcda0; /*Gold*/
@@ -325,5 +345,104 @@ body.fade-out {
 	}
 	.stickyNav a {
 		padding: 0;
+	}
+
+	.title {
+		font-size: 18px;
+		padding-top: 50px;
+	}
+
+	.aboutContainer {
+		flex-direction: column;
+	}
+	
+	.tools {
+		padding: 0;
+	}
+	
+	.tools h3 {
+		font-size: 25px;
+		padding: 0;
+	}
+
+	.tools ul {
+		padding-right: 35px;
+		padding-bottom: 30px;
+		font-size: 15px;
+	}
+
+	.extensibility {
+		font-size: 15px;
+	}
+	.functionality {
+		font-size: 15px;
+	}
+
+	.projects {
+		flex-direction: column;
+	}
+
+	.clientProjects {
+		padding-bottom: 30px;
+	}
+
+	.blogs {
+		flex-direction: column;
+	}
+
+	.blogIntro {
+		font-size: 18px;
+	}
+
+	.blogFlexBox img {
+		height: 120px;
+		width: 120px;
+	}
+}
+
+@media screen and (max-width: 1100px){
+	.qualRow1 {
+		flex-direction: column;
+	}
+
+	.tools {
+		flex: 50%;
+	}
+
+	.qualities {
+		flex: 50%;
+	}
+
+	.tools h3{
+		font-size: 25px;
+	}
+
+	.qualities h3 {
+		font-size: 25px;
+	}
+	.responsiveness {
+		flex: 100%;
+		padding-bottom: 30px;
+		font-size: 18px;
+	}
+	
+	.extensibility {
+		font-size: 18px;
+	}
+	.functionality {
+		font-size: 18px;
+	}
+
+	.qualities img {
+		height: 50px;
+	}
+
+	.extensibility {
+		flex: 100%;
+		padding-bottom: 30px;
+	}
+
+	.projects img {
+		height: 180px;
 	}
 }

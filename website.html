@@ -32,7 +32,7 @@
 	</div>
 	<div class="about" id="aboutBookmark">
 		<h2>About</h2>
-		<div class="con">
+		<div class="aboutContainer">
 			<div class="tools">
 				<h3>Languages/Frameworks/Tools</h3>
 				<ul>
@@ -52,27 +52,24 @@
 			</div>
 			<div class="qualities">
 				<h3>What Can I Add to Your Website?</h3>
-				<div class="qualitiesImg icons">
-					<img src="devices.png" alt="" height="100px">
-					<img src="extensibility.png" alt="" height="100px">
-				</div>	
-				<div class="qualitiesContainer">
-					<div>
-						Responsiveness<br>Your site will look great in all formats.<br>
+				<div class="qualRow1">
+					<div class="responsiveness icons">
+						<img src="devices.png" alt="" height="100px">
+						<br><span class="underline"></span>Responsiveness<br>Your site will look great in all formats.<br>
 						Try viewing this page on a phone or tablet.
 					</div>
-					<div>
-						Extensibility<br>Sites are coded entirely from scratch<br>
-						meaning that maintaining and adding to it will be a breeze.
+					<div class="extensibility icons">
+						<img src="extensibility.png" alt="" height="100px">
+						<br>Extensibility<br>Sites are coded entirely from scratch<br>
+						meaning that maintaining and adding to it<br>will be a breeze.
 					</div>
 				</div>
-				<div class="icons">
-					<img src="explosion.png" alt="" height="100px">
-					<!--Functionality/Pop-->
-				</div>	
-				<div>
-					Functionality<br>Your website will increase exposure and interest<br>
-					by creating a visual experience to draw customers in time after time.
+				<div class="qualRow2 icons">
+					<div class="functionality">
+						<img src="explosion.png" alt="" height="100px">
+						<br>Functionality<br>Your website will increase exposure and interest<br>
+						by creating a visual experience<br>to draw customers in time after time.
+					</div>
 				</div>
 			</div>
 		</div>
@@ -80,11 +77,14 @@
 	<div class="portfolio" id="portfolioBookmark">
 		<h2>Portfolio</h2>
 		<div class="projects">
-			<img src="client.png" alt="" height="300px">
-			<img src="mock.png" alt="" height="300px">
-		</div>
-		<div class="projectDescriptions">
-			<span>Client Projects</span><span>Mock Projects</span>
+			<div class="clientProjects">
+				<img src="client.png" alt="" height="300px">
+				<p>Client Projects</p>
+			</div>
+			<div class="mockProjects">
+				<img src="mock.png" alt="" height="300px">
+				<p>Mock Projects</p>
+			</div>
 		</div>
 	</div>
 	<div class="blog" id="blogBookmark">
@@ -93,11 +93,23 @@
 			Care to take a peek into my development journey?<br>I may end up rambling here and there, but hopefully<br>it's a good insight into the way I'm continuously learning<br>and where I plan to end up with all of this!
 		</div>
 		<div class="blogs">
-			<div class="blogRow">
+			<div class="blogFlexBox">
 				<img src="blog1.png" alt="" height="180px" width="200px">
-				<img src="blog2.png" alt="" height="180px" width="200px">
-				<img src="blog2.png" alt="" height="180px" width="200px">
+				<p>Post #1</p>
+				<p>Thoughts After My First Three Months</p>
 			</div>
+			<div class="blogFlexBox">
+				<img src="blog2.png" alt="" height="180px" width="200px">
+				<p>Post #2</p>
+				<p>Simplifying Coding and Life</p>
+			</div>
+			<div class="blogFlexBox">
+				<img src="blog3.png" alt="" height="180px" width="200px">
+				<p>Post #3</p>
+				<p>Taking The Site Live!</p>
+			</div>
+		</div>
+		<div class="buttonContainer">
 			<button class="blogButton">See All Blog Posts</button>
 		</div>
 	</div>
@@ -110,7 +122,7 @@
 			Just wanna say hi?<br> Fill out the form below!<br><br>
 		</div>	
 		<div class="contactForms">
-			<form action="">
+			<form method="post" action="index.php">
 				<p>Your Name:</p>
 				<input type="text" name="name" size="50"
 				placeholder="Name"> 
