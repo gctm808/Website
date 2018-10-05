@@ -343,8 +343,17 @@ body.fade-out {
 		flex-direction: column;
 		align-content: center;
 	}
+
 	.stickyNav a {
 		padding: 0;
+	}
+
+	.stickyNav a:not(:first-child) {
+		display: none;
+	}
+
+	.stickyNav a.icon {
+		justify-content: right;
 	}
 
 	.title {
