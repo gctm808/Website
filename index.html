@@ -8,27 +8,33 @@
 <body>
 	<script>document.body.className += ' fade-out';</script>
 	<div class="stickyNav" id="stickyNav">
-		<a href="#homeBookmark" id="homeLink">Home<a>
-		<a href="#"><img src="menu.png" height=20px width=20px></a>
-		<a href="#aboutBookmark" id="aboutLink">About Me<a>
-		<a href="#portfolioBookmark" id="portfolioLink">Portfolio<a>
-		<a href="#blogBookmark" id="blogLink">Blog<a>
-		<a href="#contactBookmark" id="contactLink">Inquiries<a>
+		<a href="#" id="mobileMenu"><img src="menu.png" height=20px width=20px></a>
+		<a href="#homeBookmark" id="menuLink1" class="menuLink">Home</a>
+		<a href="#aboutBookmark" id="menuLink2" class="menuLink">About Me</a>
+		<a href="#portfolioBookmark" id="menuLink3" class="menuLink">Portfolio</a>
+		<a href="#blogBookmark" id="menuLink4" class="menuLink">Blog</a>
+		<a href="#contactBookmark" id="menuLink5" class="menuLink">Inquiries</a>
 	</div>
 	<div class="header" id="homeBookmark">
 		<div class="title">
 			<h1><span id="line1" class="showLine1 titleFade">Garrett Moore.</span><br><span id="line2" class="showLine2 titleFade">Creating website</span><br><span id="line3" class="showLine3 titleFade">experiences to light</span><br><span id="titleUnderline" class="showLine4 titleFade">a fire under your business.</span></h1>
 		</div>
-		<div class="social"> 
-			<a href="mailto:gctm808@gmail.com?Subject=WebDev%20Inquiry" target="_top" id="mail">
-				<img src="mail.png" alt="mail" style="height:75px">
-			</a> 
-			<a href="https://www.linkedin.com/in/garrettmoore4" target="_blank" id="link">
-				<img src="linkedin.png" alt="linkedIn" style="height:75px">
-			</a>
-			<a href="https://www.github.com/gctm808" target="_blank" id="git">
-				<img src="github.png" alt="github" style="height:75px">
-			</a>
+		<div class="social">
+			<div>
+				<a href="mailto:gctm808@gmail.com?Subject=WebDev%20Inquiry" target="_top" id="mail">
+					<img src="mail.png" class="socialLinks"alt="mail">
+				</a> 
+			</div>
+			<div>
+				<a href="https://www.linkedin.com/in/garrettmoore4" target="_blank" id="link">
+					<img src="linkedin.png" class="socialLinks" alt="linkedIn">
+				</a>
+			</div>
+			<div>
+				<a href="https://www.github.com/gctm808" target="_blank" id="git">
+					<img src="github.png" class="socialLinks" alt="github">
+				</a>
+			</div>
 		</div>
 	</div>
 	<div class="about" id="aboutBookmark">

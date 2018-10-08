@@ -30,6 +30,10 @@ body.fade-out {
 	top: 0;
 }
 
+.stickyNav a:first-child {
+	display: none;
+}
+
 .stickyNav a {
 	font-size: 20px;
 	color: white;
@@ -86,15 +90,17 @@ body.fade-out {
 
 .social {
 	display: flex;
-	padding-top: 20px;
-	padding-bottom: 168px;
 	justify-content: center;
 }
 
 .social img {
-	margin: 0px 30px;
+	height: 90px;
+}
+
+.socialLinks {
 	border: 3px solid #ffcda0;
 	border-radius: 50%;
+	margin: 30px 30px 150px 30px;
 }
 
 .social img:hover {
@@ -338,6 +344,8 @@ body.fade-out {
 }
 
 
+
+
 @media screen and (max-width: 600px){
 	.stickyNav {
 		flex-direction: column;
@@ -348,17 +356,38 @@ body.fade-out {
 		padding: 0;
 	}
 
-	.stickyNav a:not(:first-child) {
+	.stickyNav a:first-child {
+		display: flex;
+		justify-content: center;
+		padding: 15px;
+	}
+
+	.social {
+		justify-content: space-evenly;
+	}
+	
+	.socialLinks {
+		margin: 40px 0px;
+	}
+
+	.menuLink {
 		display: none;
 	}
 
-	.stickyNav a.icon {
-		justify-content: right;
+	.responsive {
+		display: flex;
+		justify-content: center;
+		padding: 15px;
+		transition: display 1s ease;
 	}
 
 	.title {
 		font-size: 18px;
 		padding-top: 50px;
+	}
+	
+	.social img {
+		height: 70px;
 	}
 
 	.aboutContainer {
