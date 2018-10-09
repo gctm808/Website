@@ -40,6 +40,7 @@ body.fade-out {
 	text-decoration: none;
 	padding: 10px;
 	text-align: center;
+	margin: 0px 15px;
 }
 
 .stickyNav a:hover{ 
@@ -146,7 +147,7 @@ body.fade-out {
 }
 
 .tools ul{
-	padding-top: 30px;
+	padding-top: 50px;
 	font-size: 20px;
 	list-style-type: none;
 	text-align: center;
@@ -196,6 +197,7 @@ body.fade-out {
 
 .portfolio {
 	border-bottom: 5px solid #ffcda0; /*Gold*/
+	background-color: #e8e8e8;
 }
 
 
@@ -228,10 +230,34 @@ body.fade-out {
 	font-size: 25px;
 }
 
+.clientProjects img {
+	opacity: .4;
+}
+
+.clientProjects a {
+	color: black;
+	text-decoration: none;
+}
+
+.clientProjects a:hover {
+	color: #ffcda0; /*Gold*/
+	text-decoration: underline; 
+}
+
 .mockProjects {
 	flex: 50%;
 	margin-bottom: 200px;
 	font-size: 25px;
+}
+
+.mockProjects a {
+	color: black;
+	text-decoration: none;
+}
+
+.mockProjects a:hover {
+	color: #ffcda0; /*Gold*/
+	text-decoration: underline; 
 }
 
 .blog {
@@ -280,6 +306,16 @@ body.fade-out {
 	transition: all .4s ease-in-out;
 }
 
+.blogFlexBox a {
+	color: white;
+	text-decoration: none;
+}
+
+.blogFlexBox a:hover {
+	color: #ffcda0; /*Gold*/
+	text-decoration: underline; 
+}
+
 .buttonContainer {
 	display: flex;
 	width: 100%;
@@ -294,6 +330,11 @@ body.fade-out {
 	color: black;
 	border: 2px solid black;
 	border-radius: 4px;
+}
+
+.blogButton:hover {
+	cursor: pointer;
+	text-decoration: underline;
 }
     
 .contact {
@@ -336,6 +377,7 @@ body.fade-out {
 
 .submitButton:hover {
 	cursor: pointer;
+	text-decoration: underline;
 }
 
 #message {
@@ -364,6 +406,7 @@ body.fade-out {
 
 	.social {
 		justify-content: space-evenly;
+		padding-bottom: 100px;
 	}
 	
 	.socialLinks {
@@ -383,7 +426,7 @@ body.fade-out {
 
 	.title {
 		font-size: 18px;
-		padding-top: 50px;
+		padding-top: 135px;
 	}
 	
 	.social img {
@@ -404,16 +447,12 @@ body.fade-out {
 	}
 
 	.tools ul {
-		padding-right: 35px;
-		padding-bottom: 30px;
-		font-size: 15px;
+		padding: 30px 0 30px 0;
+		font-size: 18px;
 	}
 
-	.extensibility {
-		font-size: 15px;
-	}
-	.functionality {
-		font-size: 15px;
+	.portfolio h2 {
+		padding: 80px 0;
 	}
 
 	.projects {
@@ -422,6 +461,10 @@ body.fade-out {
 
 	.clientProjects {
 		padding-bottom: 30px;
+	}
+
+	.mockProjects {
+		margin-bottom: 100px;
 	}
 
 	.blogs {
@@ -472,7 +515,7 @@ body.fade-out {
 	}
 
 	.qualities img {
-		height: 50px;
+		height: 70px;
 	}
 
 	.extensibility {
